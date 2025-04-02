@@ -1,0 +1,242 @@
+{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.4)40%), url(1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar{
+    width: 1400px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 1400px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: gold;
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 200px;
+    float: none;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family:Tahoma;
+    font-weight: normal;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: gold;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: Arial;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 120px;
+    height: 40px;
+    background: gold;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.cn:hover{
+    background-color: white;
+}
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.contents{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+
+.contents .welcome{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.contents h1{
+    font-family: Arial;
+    font-size: 50px;
+    color: gold;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.contents .cnn{
+    width: 120px;
+    height: 40px;
+    background: gold;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.contents .cnn a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.cnn:hover{
+    background-color: white;
+}
+
+.contentss{
+    width: 1200px;
+    height: 40px;
+    margin: 20px;
+    color: white;
+    position: relative 
+}
+
+.contentss h1{
+    font-family: Arial;
+    font-size: 50px;
+    color: gold;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}  
+
+
+.contentss .para{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+}
+ 
+.contentss .cnd{
+    width: 120px;
+    height: 40px;
+    background: gold;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;   
+}
+
+.contentss .cnd a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.cnd:hover{
+    background-color: white;
+}
+
+.contentss .cna{
+    width: 120px;
+    height: 40px;
+    background: gold;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;   
+}
+
+.contentss .cna a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.cna:hover{
+    background-color: white;
+
+
+ 

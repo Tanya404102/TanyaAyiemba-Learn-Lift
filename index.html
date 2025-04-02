@@ -1,107 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>'Tanya's Portfolio</title>
-    <style>
-        body {
-            background-color: #7f67ac;  
-            color: white; 
-            font-family: Calibri, sans-serif; 
-            margin: 0; 
-            display: flex; 
-            flex-direction: column; 
-        }
-        h1 {
-            background-color: #4f3485;
-            color: white;
-            font-family: Verdana, sans-serif; 
-            font-size: 18px; 
-            font-weight: bold; 
-            padding: 20px; 
-            text-align: center; 
-            margin: 0; 
-        }
-        .container {
-            display: flex; 
-            flex-grow: 1; 
-        }
-        nav {
-            background-color: white; 
-            padding: 15px; 
-            width: 200px; 
-            height: 100vh; 
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        }
-        nav a {
-            color: periwinkle; 
-            text-decoration: none; 
-            display: block; 
-            margin: 10px 0; 
-            font-size: 14px; 
-        }
-        nav a:hover {
-            text-decoration: underline; 
-        }
-        .content {
-            padding: 20px; 
-            flex-grow: 1; 
-            margin-left: 20px; 
-            background-color: #7f67ac; 
-        }
-        h2 {
-            font-family: Calibri, sans-serif; 
-            font-size: 16px; 
-            font-weight: bold; 
-            text-align: center;
-            margin-top: 50px;
-        }
-        p {
-            font-family: Calibri, sans-serif; 
-            font-size: 14px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        ul {
-            list-style-type:none;
-            font-family: Calibri, sans-serif; 
-            font-size: 14px; 
-            text-align: justify;
-        }
-    </style>
+    <title>My Portifolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="main">
+        <div class="navbar">
+        <div class="icon">
+                <h2 class="logo">Tanya Ayiemba</h2>
+            </div>
 
-    <h1>Tanya's Portfolio</h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="modules.html">MODULES</a></li>
+                    <li><a href="https://www.gearbox.co.ke/academy/">GEARBOX</a></li>
+                    <li><a href="https://afretec.uonbi.ac.ke/">AFRETEC</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>Learn Lift</h1>
+                <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Tempora, quos maiores saepe beatae consectetur eveniet error assumenda,<br> voluptatum repudiandae rerum velit minus vitae, neque amet repellendus sit! <br> Deserunt, consequatur in.</p>
+                <button class="cn"><a href="tanyaayiemba@gmail.com">Email</a></button>
+            </div>
 
-    <div class="container">
-        <nav>
-            <a href="#hello">Hello</a>
-            <a href="#what-i-have-learnt">What I Have Learnt</a>
-            <a href="https://www.gearbox.co.ke/">Gearbox</a>
-            <a href="https://afretec.uonbi.ac.ke/">Afretec</a>
-
-        </nav>
-
-        <div class="content">
-            <h2 id="hello">Hello!</h2>
-            <p>I am Tanya Ayiemba, a fifth year Civil Engineering student at the University of Nairobi. I am passionate about AI and I think that the embedded systems training that is being offered by AFRETEC in collaboration with GEARBOX is a great opportunity.</p>
-
-            <h2 id="what-i-have-learnt">What I Have Learnt</h2>
-            <ul>
-                <li>Git and Github</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Markdown</li>
-                <li>An introduction to Embedded systems</li>
-                <li>IDEs such as Arduino and Thonny</li>
-            </ul>
-        </div>
+        </div> 
     </div>
-
+    
 </body>
 </html>
-    
-    
-
