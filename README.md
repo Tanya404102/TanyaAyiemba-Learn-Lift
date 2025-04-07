@@ -1,3 +1,2 @@
-# My-Portifolio
-Embedded Systems Training"# Portifolio" 
-"# Portifolio" 
+# My-Portfolio
+Embedded Systems Training"
