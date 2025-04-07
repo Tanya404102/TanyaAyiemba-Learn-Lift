@@ -1,242 +1,239 @@
 {
-    margin: 0;
     padding: 0;
+    margin: 0; 
 }
-.main{
+.header{
+    position: fixed;
+    top: 0;
+    left: 0; 
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.4)40%), url(1.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 109vh;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8) ;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-sizing: border-box;
 }
-
-.navbar{
-    width: 1400px;
-    height: 75px;
-    margin: auto;
-}
-
-.icon{
-    width: 1400px;
-    float: left;
-    height: 70px;
-}
-
 .logo{
-    color: gold;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
     font-size: 25px;
-    font-family: Arial;
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
-
-.menu{
-    width: 200px;
-    float: none;
-    height: 70px;
+.logo:hover{
+    color: gold;
+    text-shadow: 0 0 25px gold;
+    text-shadow: 0 0 50px gold;
+    transform: scale(1.1);
 }
-
-ul{
-    float: left;
+span{
+    color: gold;
+}
+.navbar a{
+    text-decoration: none;
+    font-family:Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover{
+    color: gold;
+    border-bottom: 3px solid gold;
+}
+.contact{
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+     border: 2px solid transparent;
+     border-radius: 8px;
+     font-size: 16px;
+     letter-spacing: 1px;
+     font-weight: 600;
+     transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: gold;
+    box-shadow: 0 0 25px gold;
+    color: white;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(212, 212, 212);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-cont{
+  max-width: 800px;  
+}
+.home-cont h1{
+    font-family: Helvetica, sans-serif;
+    font-size: 70px;
+    line-height: 2.2;
+}
+.home-cont p{
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin: 25px 0 30px;
+    line-height: 1.5;
+}
+.btn-box{
+    width: 400px;
+    display: contents;
+    gap: 8em;
+}
+.btn-1{
+    text-decoration: none;
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: gold;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: white;
+    color: gold;
+}
+.about{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+.about-cont h2{
+    text-align: left;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 50px;
+}
+.about p{
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 4em 0 5em;
+}
+.btn-boxs{
+    width: 400px;
+    display: contents;
+    gap: 8em;
+}
+.btn-3{
+    padding: 15px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-3:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.modules{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(212, 212, 212);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.modu-cont h2{
+    text-align: left;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 50px;
+}
+.modu-cont p{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 25px 0 30px;
+    line-height: 1.2;  
 }
 ul li{
-    list-style: none;
-    margin-left: 100px;
-    margin-top: 0px;
-    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 25px 0 30px;
+    line-height: 1.0;  
+}
+.two-column{
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
 }
 
-ul li a{
-    text-decoration: none;
-    color: white;
-    font-family:Tahoma;
-    font-weight: normal;
-    transition: 0.4s ease-in-out;
-}
-
-ul li a:hover{
-    color: gold;
-}
-
-.content{
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    color: white;
+.footer{
     position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
 }
-
-.content .par{
-    padding-left: 20px;
+.footer .social{
+    text-align: center;
     padding-bottom: 25px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-}
-
-.content h1{
-    font-family: Arial;
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}
-
-.content .cn{
-    width: 120px;
-    height: 40px;
-    background: gold;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s ease;
-}
-
-.content .cn a{
-    text-decoration: none;
-    color: black;
-    transition: 0.3s ease;
-}
-
-.cn:hover{
-    background-color: white;
-}
-{
-    margin: 0;
-    padding: 0;
-}
-
-
-.contents{
-    width: 1200px;
-    height: auto;
-    margin: auto;
     color: white;
-    position: relative;
-}
-
-.contents .welcome{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-}
-
-.contents h1{
-    font-family: Arial;
-    font-size: 50px;
-    color: gold;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}
-
-.contents .cnn{
-    width: 120px;
-    height: 40px;
-    background: gold;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s ease;
-}
-
-.contents .cnn a{
     text-decoration: none;
-    color: black;
-    transition: 0.3s ease;
 }
-
-.cnn:hover{
-    background-color: white;
-}
-
-.contentss{
-    width: 1200px;
-    height: 40px;
-    margin: 20px;
+.footer .social a{
+    font-size: 24px;
     color: white;
-    position: relative 
-}
-
-.contentss h1{
-    font-family: Arial;
-    font-size: 50px;
-    color: gold;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}  
-
-
-.contentss .para{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: Arial;
-    font-size: 18px;
-    letter-spacing: 1.2px;
-    line-height: 20px;
-}
- 
-.contentss .cnd{
-    width: 120px;
+    border: 2px solid gold;
+    width: 40px;
     height: 40px;
-    background: gold;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s ease;   
-}
-
-.contentss .cnd a{
-    text-decoration: none;
-    color: black;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px gold, 0 0 10px gold;
     transition: 0.3s ease;
 }
-
-.cnd:hover{
-    background-color: white;
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: white;
+    border: 2px solid gold;
 }
-
-.contentss .cna{
-    width: 120px;
-    height: 40px;
-    background: gold;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    float: right;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s ease;   
-}
-
-.contentss .cna a{
-    text-decoration: none;
-    color: black;
-    transition: 0.3s ease;
-}
-
-.cna:hover{
-    background-color: white;
-
-
- 
