@@ -67,12 +67,12 @@ span{
 }
 .home{
     width: 100%;
-    min-height: 100vh;
+    height: 80vh;
     background: rgb(212, 212, 212);
     display: flex;
     align-items: center;
     gap: 7em;
-    padding: 30px 12% 0;
+    padding: 10px 10% 0;
 }
 .home-cont{
   max-width: 800px;  
@@ -133,8 +133,9 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12% 8%;
-    gap: 10em;
+    width: 100%;
+    gap: 7 em;
+    padding: 10px 10% 10%;
     background: black;
 }
 .about-cont h2{
@@ -179,7 +180,7 @@ span{
     display: flex;
     align-items: center;
     gap: 7em;
-    padding: 30px 12% 0;
+    padding: 20px 10% 10%;
 }
 .modu-cont h2{
     text-align: left;
@@ -201,7 +202,7 @@ ul li{
 }
 .two-column{
     display: grid;
-    gap: 60px;
+    gap: 80px;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -209,7 +210,7 @@ ul li{
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 40px 0;
+    padding: 10px 10%;
     background-color: black;
 }
 .footer .social{
