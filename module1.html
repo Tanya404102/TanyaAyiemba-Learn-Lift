@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1: Project Management and Documentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header/Navbar - Modified -->
+    <header class="bg-dark-grey text-white p-4 shadow-custom">
+        <nav class="container mx-auto flex flex-col sm:flex-row items-center justify-center">
+            <!-- Navigation Links - Dropdown removed -->
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-lg font-medium">
+                <li><a href="index.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">About me</a></li>
+                <li><a href="modules.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Modules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content for Individual Module Page -->
+    <main class="flex-grow bg-light-grey p-8">
+        <!-- Changed max-w-4xl to max-w-full to allow content to expand -->
+        <div class="container mx-auto max-w-full bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-bold text-black mb-6 text-center">Week 1: Project Management and Documentation</h2>
+            
+            <p class="text-lg text-gray-700 mb-6">
+                This module focuses on foundational tools for collaborative development and project tracking.
+            </p>
+
+            <!-- Section for Key Learnings -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Key Learnings:</h4>
+                <ul class="list-disc list-inside text-gray-700 pl-4">
+                    <li><strong>Introduction to Github:</strong> Understanding GitHub as a platform for hosting and collaborating on Git repositories.</li>
+                    <li><strong>Introduction to Git:</strong> Core concepts of Git for version control, including commits, branches, and merges.</li>
+                    <li><strong>Introduction to Web Publishing (Github):</strong> How to host static websites directly from GitHub repositories using GitHub Pages.</li>
+                </ul>
+            </div>
+
+            <!-- Section for Projects/Exercises -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Projects/Exercises:</h4>
+                <p class="text-gray-700">
+                    <strong>Day 1:</strong> Introduction to Github.
+                    <br>
+                    <strong>Day 2:</strong> Introduction to Git.
+                    <br>
+                    <strong>Day 3:</strong> Introduction to Web Publishing (Github).
+                    <br><br>
+                    <strong>Relevant Resources:</strong>
+                    <ul class="list-disc list-inside text-gray-700 pl-4 mt-2">
+                        <li><a href="https://github.com" target="_blank" class="text-blue-600 hover:underline">Github</a></li>
+                        <li><a href="https://git-scm.com/" target="_blank" class="text-blue-600 hover:underline">Git</a></li>
+                        <li><a href="https://www.w3schools.com/html/" target="_blank" class="text-blue-600 hover:underline">HTML</a></li>
+                        <li><a href="https://www.w3schools.com/css/" target="_blank" class="text-blue-600 hover:underline">CSS</a></li>
+                        <li><a href="https://www.markdownguide.org/basic-syntax/" target="_blank" class="text-blue-600 hover:underline">Markdown Basics</a></li>
+                        <li><a href="https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax" target="_blank" class="text-blue-600 hover:underline">Github Markdown</a></li>
+                        <li><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site" target="_blank" class="text-blue-600 hover:underline">Github Pages</a></li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Navigation buttons for modules -->
+            <div class="flex justify-between items-center mt-8 flex-wrap gap-4">
+                <!-- No Previous Module Button for Module 1 -->
+
+                <!-- Back to Modules List Button (centered) -->
+                <a href="modules.html" class="px-6 py-2 bg-lift-yellow text-black rounded-md font-semibold hover:bg-yellow-400 transition duration-300">
+                    Back to Modules List
+                </a>
+
+                <!-- Next Module Button -->
+                <a href="module2.html" class="px-6 py-2 bg-black text-white rounded-md font-semibold hover:bg-gray-800 transition duration-300">
+                    Next Module &gt;
+                </a>
+            </div>
+        </div>
+    </main>
+
+   
+    <footer class="bg-dark-grey text-white p-4 text-center text-sm">
+        
+    </footer>
+
+    
+</body>
+</html>

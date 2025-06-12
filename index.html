@@ -1,98 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <title>Learn Lift</title> 
-       <link rel="stylesheet" href="style.css">
-       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanya Ayiemba - Embedded Systems Training</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header/Navbar -->
+    <header class="bg-dark-grey text-white p-4 shadow-custom">
+        <nav class="container mx-auto flex flex-col sm:flex-row items-center justify-between">
+            <!-- Brand Name -->
+            <div class="text-2xl font-bold mb-4 sm:mb-0">
+                <span class="text-lift-yellow">Tanya</span> Ayiemba
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-lg font-medium">
+                <li><a href="index.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">About me</a></li>
+                <li><a href="modules.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Modules</a></li>
+            </ul>
+
+            <!-- Contact Button - Removed from index.html as requested -->
+        </nav>
+    </header>
+
+    <!-- Main Content Area - Homepage Specific -->
+    <main class="flex-grow bg-light-grey flex items-center justify-center p-4">
+        <div class="text-center max-w-4xl mx-auto">
+            <h1 class="text-6xl sm:text-7xl md:text-8xl font-extrabold text-black mb-4 leading-tight">
+                Learn <span class="text-lift-yellow">Lift</span>
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-800 mb-8 max-w-2xl mx-auto">
+                A documentation of My progress in the Embedded Systems Training
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="about.html" class="inline-block px-8 py-4 bg-black text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-gray-800 transition duration-300">
+                    About Me &gt;
+                </a>
+                <a href="modules.html" class="inline-block px-8 py-4 bg-lift-yellow text-black text-lg font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300">
+                    Modules &gt;&gt;
+                </a>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="bg-dark-grey text-white p-4 text-center text-sm">
         
-    </head>
-    <body>
-      <header class="header">
-        <a href="#" class="logo"><span>Tanya</span> Ayiemba</a>
-         <nav class="navbar">
-            <a href="#Home">Home</a>
-            <a href="#About-me">About me</a>
-            <a href="#modules">Modules</a>
-          </nav>
-          <a href="#contact" class="contact">Contact Me</a>
-      </header>
+    </footer>
 
-      <section id="Home" class="home">
-        <div class="home-cont">
-          <h1>Learn <span>Lift</span></h1>
-          <p>A documentation of My progress in the Embedded Systems Training</p>
-
-          <div class="btn-box">
-            <button class="btn-1">About Me ></button>
-            <button class="btn-2">Modules >></button>
-          </div>
-        </div>
-      </section>
-      <section id="About-me" class="about">
-        <div class="about-cont">
-          <h2 class="heading">About <span>Me</span></h2>
-          <p>My name is Tanya Ayiemba.
-            As a final-year civil engineering student, I'm passionate about building and problem-solving.
-            Gearbox and AFRETEC have granted me the opportunity to delve into embedded systems, expanding my technical skillset beyond structural design.
-            This experience promises to broaden my perspective and equip me with diverse engineering capabilities.
-          </p>
-          <div class="btn-boxs">
-            <button class="btn-3">Home <</button>
-            <button class="btn-2">Modules ></button>
-          </div>
-        </div>
-      </section>
-      <section id="modules" class="modules ">
-         <div class="modu-cont">
-            <h2 class="heading">Modules</h2>
-            <div class="two-column">
-              <div>
-                <p>Introduction to Github</p>
-                <a href="https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account" class="btn-6">More</a>
-                <p>Introduction to Git</p>
-                <a href="https://git-scm.com/book/en/v2" class="btn-6">More</a>
-                <p>Introduction to Web Publishing
-                  <ul>
-                    <li>HTML and CSS</li>
-                    <a href="https://youtu.be/G3e-cpL7ofc?feature=shared" class="btn-6">More</a>
-                    <li>Markdown</li>
-                    <a href="https://www.markdownguide.org/getting-started/" class="btn-6">More</a>
-                    <li>Githup Pages</li>
-                    <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages" class="btn-6">More</a>
-                  </ul>
-                </p>
-            </div>
-            <div>
-              <p>Introduction to Embedded Systems</p>
-              <a href="https://www.techtarget.com/iotagenda/definition/embedded-system" class="btn-6">More</a></button>
-              <p>Introduction to IDEs
-                <ul>
-                  <li>Arduino</li>
-                  <a href="https://www.arduino.cc/" class="btn-6">More</a>
-                  <li>Thonny</li>
-                  <a href="https://thonny.org/" class="btn-6">More</a>
-                </ul>
-              </p>
-              <p>Introduction to C and Embedded C</p>
-              <a href="https://en.wikibooks.org/wiki/Embedded_Systems/C_Programming" class="btn-6">More</a>
-              <p>Introduction to Electronic Circuits and Components</p>
-              <a href="https://blog.mide.com/how-electronic-components-work#:~:text=Electronic%20Circuit%20Overview,capacitors%2C%20inductors%2C%20and%20diodes" class="btn-6">More</a>
-            </div>
-          </div>
-            
-            <div class="btn-box">
-              <button class="btn-1">Home <<</button>
-              <button class="btn-2">About Me<</button>
-            </div>
-         </div>
-      </section>
-      <footer id="contact" class="footer">
-        <div class="social">
-          <a href="https://www.linkedin.com/in/tanya-ayiemba-63801a1a2?trk=contact-info"><i class='bx bxl-linkedin-square'></i></a>
-          <a href="tanyaayiemba@gmail.com"><i class='bx bxl-gmail' ></i></a>
-        </div>
-
-      </footer>
-      </body>  
-    </body>
+    
+</body>
 </html>

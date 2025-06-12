@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header/Navbar - Replicated -->
+    <header class="bg-dark-grey text-white p-4 shadow-custom">
+        <nav class="container mx-auto flex flex-col sm:flex-row items-center justify-between">
+            <div class="text-2xl font-bold mb-4 sm:mb-0">
+                <span class="text-lift-yellow">Tanya</span> Ayiemba
+            </div>
+            <!-- Navigation Links - Dropdown removed -->
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-lg font-medium">
+                <li><a href="index.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">About me</a></li>
+                <li><a href="modules.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Modules</a></li>
+            </ul>
+            <!-- Contact Me button removed from header as requested -->
+        </nav>
+    </header>
+
+    <!-- Main Content for About Page - Styled like index.html's central content block -->
+    <main class="flex-grow bg-light-grey flex items-center justify-center p-8">
+        <div class="text-center max-w-4xl mx-auto">
+            <!-- Removed bg-white from this div to match index.html's background style -->
+            <div class="p-8 rounded-lg"> 
+                <h2 class="text-4xl font-bold text-black mb-6">About Me</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    I am Tanya Ayiemba, currently done with university and awaiting graduation. I was studying at the University of Nairobi, doing Civil Engineering.
+                </p>
+                <p class="text-lg text-gray-700 mb-8">
+                    I greatly appreciate Gearbox and Afretec for the opportunity to learn Embedded Systems. This website documents my journey and progress in this exciting field.
+                </p>
+
+                <!-- Navigation buttons at the bottom -->
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8">
+                    <a href="index.html" class="inline-block px-8 py-4 bg-black text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-gray-800 transition duration-300">
+                        &lt; Back to Home
+                    </a>
+                    <a href="modules.html" class="inline-block px-8 py-4 bg-lift-yellow text-black text-lg font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300">
+                        Modules &gt;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark-grey text-white p-4 text-center text-sm flex justify-center items-center space-x-4">
+        <!-- LinkedIn Symbol with hover effect and circular border -->
+        <a href="https://www.linkedin.com/in/tanya-ayiemba-63801a1a2" target="_blank" 
+           class="inline-flex items-center justify-center text-white p-1
+                  social-icon-effect">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.481 2.5s-2.481-1.119-2.481-2.5 1.11-2.5 2.481-2.5 2.481 1.119 2.481 2.5zM0 8h4.98v16h-4.98zM9.43 8h4.743v2.964h.071c.659-1.189 2.263-2.443 4.693-2.443 5.012 0 5.94 3.125 5.94 7.195v8.344h-4.978v-7.391c0-1.766-.034-4.04-2.459-4.04-2.465 0-2.842 1.916-2.842 3.916v7.515h-4.979v-16z"/>
+            </svg>
+        </a>
+
+        <!-- Gmail Symbol with hover effect and circular border -->
+        <a href="mailto:tanyaayiemba@gmail.com" target="_blank" 
+           class="inline-flex items-center justify-center text-white p-1
+                  social-icon-effect">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1.8 2L12 11.4 3.8 6h16.4zM22 18H2V8l10 6 10-6v10z"/>
+            </svg>
+        </a>
+    </footer>
+</body>
+</html>

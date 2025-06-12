@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3: Introduction to ESP32 and Electrical Circuits and Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header/Navbar - Modified -->
+    <header class="bg-dark-grey text-white p-4 shadow-custom">
+        <nav class="container mx-auto flex flex-col sm:flex-row items-center justify-center">
+            <!-- Navigation Links - Dropdown removed -->
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-lg font-medium">
+                <li><a href="index.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">About me</a></li>
+                <li><a href="modules.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Modules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content for Individual Module Page -->
+    <main class="flex-grow bg-light-grey p-8">
+        <!-- Changed max-w-4xl to max-w-full to allow content to expand -->
+        <div class="container mx-auto max-w-full bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-bold text-black mb-6 text-center">Week 3: Introduction to ESP32 and Electrical Circuits and Components</h2>
+            
+            <p class="text-lg text-gray-700 mb-6">
+                This module delves into the specifics of the ESP32 microcontroller, its integration with electrical circuits, and common electronic components.
+            </p>
+
+            <!-- Section for Key Learnings -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Key Learnings:</h4>
+                <ul class="list-disc list-inside text-gray-700 pl-4">
+                    <li><strong>Introduction to electronic circuits and components:</strong> Basic understanding of resistors, capacitors, LEDs, etc., and how they function in a circuit.</li>
+                    <li><strong>Introduction to Student Kits:</strong> Familiarity with the components provided in student kits for hands-on exercises.</li>
+                    <li><strong>Overview of ESP32 and RPi Pico, including GPIOs:</strong> Detailed understanding of the ESP32 and Raspberry Pi Pico, focusing on their General Purpose Input/Output (GPIO) pins for interfacing with external components.</li>
+                    <li><strong>Introduction to the Arduino IDE and programming the ESP32:</strong> Learning how to use the Arduino IDE to write and upload code to ESP32 boards.</li>
+                </ul>
+            </div>
+
+            <!-- Section for Projects/Exercises -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Projects/Exercises:</h4>
+                <p class="text-gray-700">
+                    <strong>Day 1:</strong> Introduction to electronic circuits and components, Introduction to Student Kits.
+                    <br>
+                    <strong>Day 2:</strong> Overview of ESP32 and RPi Pico, including GPIOs.
+                    <br>
+                    <strong>Day 3:</strong> Introduction to the Arduino IDE and programming the ESP32.
+                    <br><br>
+                    <strong>Relevant Resources:</strong>
+                    <ul class="list-disc list-inside text-gray-700 pl-4 mt-2">
+                        <li><a href="https://www.circuitbasics.com/electrical-components-tutorial/" target="_blank" class="text-blue-600 hover:underline">Electrical Components Tutorial 1</a></li>
+                        <li><a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started.html" target="_blank" class="text-blue-600 hover:underline">ESP32 Pinout Diagram</a> </li>
+                        <li><a href="https://datasheets.raspberrypi.com/pico/Pico-R3-RP2040-Datasheet.pdf" target="_blank" class="text-blue-600 hover:underline">Raspberry Pi Pico Pinout Diagram Download</a> </li>
+                        <li><a href="https://www.espressif.com/en/solutions/iot-applications/esp32-for-iot" target="_blank" class="text-blue-600 hover:underline">ESP32 for IoT</a></li>
+                        <li><a href="https://docs.arduino.cc/hardware/esp32-devkitc/" target="_blank" class="text-blue-600 hover:underline">Installing the ESP32 Board in Arduino IDE</a></li>
+                        <li><a href="https://randomnerdtutorials.com/esp32-pinout-reference-gpio-datasheet/" target="_blank" class="text-blue-600 hover:underline">ESP32 Pinout Diagram</a></li>
+                        <li><a href="https://github.com/nodemcu/nodemcu-devkit-v1.0" target="_blank" class="text-blue-600 hover:underline">NodeMCU32S Wiki</a></li>
+                        <li><a href="https://docs.arduino.cc/learn/platform-modules/getting-started-with-development-boards/" target="_blank" class="text-blue-600 hover:underline">Introduction to development board</a></li>
+                        <li><a href="https://docs.arduino.cc/software/arduino-ide/appendix/installing-boards/" target="_blank" class="text-blue-600 hover:underline">Installing ESP32 in Arduino IDE</a></li>
+                        <li><a href="https://docs.arduino.cc/arduino-esp32-core/" target="_blank" class="text-blue-600 hover:underline">ESP32 Arduino Core's documentation</a></li>
+                        <li><a href="https://randomnerdtutorials.com/getting-started-with-esp32-and-arduino-ide/" target="_blank" class="text-blue-600 hover:underline">Getting Started with ESP32 and Arduino</a></li>
+                        <li><a href="https://www.pololu.com/docs/0J73/all#2" target="_blank" class="text-blue-600 hover:underline">Pololu ESP32 CP2102 Driver Installation</a> </li>
+                        <li><a href="https://docs.arduino.cc/learn/" target="_blank" class="text-blue-600 hover:underline">Learn Arduino</a></li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Navigation buttons for modules -->
+            <div class="flex justify-between items-center mt-8 flex-wrap gap-4">
+                <!-- Previous Module Button -->
+                <a href="module2.html" class="px-6 py-2 bg-black text-white rounded-md font-semibold hover:bg-gray-800 transition duration-300">
+                    &lt; Previous Module
+                </a>
+
+                <!-- Back to Modules List Button (centered) -->
+                <a href="modules.html" class="px-6 py-2 bg-lift-yellow text-black rounded-md font-semibold hover:bg-yellow-400 transition duration-300">
+                    Back to Modules List
+                </a>
+
+                <!-- Next Module Button -->
+                <a href="module4.html" class="px-6 py-2 bg-black text-white rounded-md font-semibold hover:bg-gray-800 transition duration-300">
+                    Next Module &gt;
+                </a>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="bg-dark-grey text-white p-4 text-center text-sm">
+        
+    </footer>
+
+    
+</body>
+</html>

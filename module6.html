@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6: Introduction to Wired Communication Protocols</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header/Navbar - Modified -->
+    <header class="bg-dark-grey text-white p-4 shadow-custom">
+        <nav class="container mx-auto flex flex-col sm:flex-row items-center justify-center">
+            <!-- Navigation Links - Dropdown removed -->
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-lg font-medium">
+                <li><a href="index.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">About me</a></li>
+                <li><a href="modules.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Modules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content for Individual Module Page -->
+    <main class="flex-grow bg-light-grey p-8">
+        <!-- Changed max-w-4xl to max-w-full to allow content to expand -->
+        <div class="container mx-auto max-w-full bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-bold text-black mb-6 text-center">Week 6: Introduction to Wired Communication Protocols</h2>
+            
+            <p class="text-lg text-gray-700 mb-6">
+                This module focuses on understanding essential wired communication protocols used in embedded systems for device-to-device communication.
+            </p>
+
+            <!-- Section for Key Learnings -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Key Learnings:</h4>
+                <ul class="list-disc list-inside text-gray-700 pl-4">
+                    <li><strong>Communication Protocols in Embedded Systems:</strong> Overview of why and how different protocols are used in embedded contexts.</li>
+                    <li><strong>Working with communication protocols (I2C, UART, SPI):</strong> Detailed understanding and practical application of Inter-Integrated Circuit (I2C), Universal Asynchronous Receiver-Transmitter (UART), and Serial Peripheral Interface (SPI).</li>
+                    <li><strong>Ultrasonic sensor:</strong> How to interface and read data from an ultrasonic sensor (e.g., HC-SR04) using communication protocols.</li>
+                    <li><strong>PIR sensor:</strong> Understanding and interfacing with Passive Infrared (PIR) sensors for motion detection.</li>
+                </ul>
+            </div>
+
+            <!-- Section for Projects/Exercises -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Projects/Exercises:</h4>
+                <p class="text-gray-700">
+                    <strong>Day 1:</strong> Communication Protocols in Embedded systems.
+                    <br>
+                    <strong>Day 2:</strong> Working with communication protocols (I2C, UART, SPI).
+                    <br>
+                    <strong>Day 3:</strong> Ultrasonic sensor, PIR sensor.
+                    <br><br>
+                    <strong>Relevant Resources:</strong>
+                    <ul class="list-disc list-inside text-gray-700 pl-4 mt-2">
+                        <li><a href="https://www.electronicdesign.com/technologies/embedded-revolution/article/21796939/communication-protocols-embedded-engineers-should-know" target="_blank" class="text-blue-600 hover:underline">Communication Protocols Embedded Engineers Should Know</a></li>
+                        <li><a href="https://learn.sparkfun.com/tutorials/serial-communication" target="_blank" class="text-blue-600 hover:underline">Serial Communication</a></li>
+                        <li><a href="https://learn.sparkfun.com/tutorials/i2c" target="_blank" class="text-blue-600 hover:underline">Understanding I2C</a></li>
+                        <li><a href="https://learn.sparkfun.com/tutorials/spi" target="_blank" class="text-blue-600 hover:underline">Understanding SPI</a></li>
+                        <li><a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/SPIDigitalPot" target="_blank" class="text-blue-600 hover:underline">Arduino - Serial Peripheral Interface (SPI)</a></li>
+                        <li><a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/TwoWireSlave" target="_blank" class="text-blue-600 hover:underline">Arduino - Two Wire (I2C)</a></li>
+                        <li><a href="https://randomnerdtutorials.com/raspberry-pi-pico-ultrasonic-sensor-hc-sr04/" target="_blank" class="text-blue-600 hover:underline">Raspberry Pi Pico - Ultrasonic Sensor</a></li>
+                        <li><a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/Ping" target="_blank" class="text-blue-600 hover:underline">Arduino - Ultrasonic Sensor</a></li>
+                        <li><a href="https://randomnerdtutorials.com/pir-motion-sensor-esp32-arduino/" target="_blank" class="text-blue-600 hover:underline">PIR Sensor Theory</a></li>
+                        <li><a href="https://randomnerdtutorials.com/raspberry-pi-pico-pir-motion-sensor-micropython/" target="_blank" class="text-blue-600 hover:underline">Raspberry Pi Pico - PIR Sensor</a></li>
+                        <li><a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/PIRsensor" target="_blank" class="text-blue-600 hover:underline">Arduino - PIR Sensor</a></li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Navigation buttons for modules -->
+            <div class="flex justify-between items-center mt-8 flex-wrap gap-4">
+                <!-- Previous Module Button -->
+                <a href="module5.html" class="px-6 py-2 bg-black text-white rounded-md font-semibold hover:bg-gray-800 transition duration-300">
+                    &lt; Previous Module
+                </a>
+
+                <!-- Back to Modules List Button (centered) -->
+                <a href="modules.html" class="px-6 py-2 bg-lift-yellow text-black rounded-md font-semibold hover:bg-yellow-400 transition duration-300">
+                    Back to Modules List
+                </a>
+
+                <!-- Next Module Button -->
+                <a href="module7.html" class="px-6 py-2 bg-black text-white rounded-md font-semibold hover:bg-gray-800 transition duration-300">
+                    Next Module &gt;
+                </a>
+            </div>
+        </div>
+    </main>
+
+   
+    <footer class="bg-dark-grey text-white p-4 text-center text-sm">
+        
+    </footer>
+
+    
+</body>
+</html>

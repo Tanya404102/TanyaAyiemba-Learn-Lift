@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4: Introduction to Python and Raspberry Pi PICO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header/Navbar - Modified -->
+    <header class="bg-dark-grey text-white p-4 shadow-custom">
+        <nav class="container mx-auto flex flex-col sm:flex-row items-center justify-center">
+            <!-- Navigation Links - Dropdown removed -->
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-lg font-medium">
+                <li><a href="index.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">About me</a></li>
+                <li><a href="modules.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Modules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content for Individual Module Page -->
+    <main class="flex-grow bg-light-grey p-8">
+        <!-- Changed max-w-4xl to max-w-full to allow content to expand -->
+        <div class="container mx-auto max-w-full bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-bold text-black mb-6 text-center">Week 4: Introduction to Python and Raspberry Pi PICO</h2>
+            
+            <p class="text-lg text-gray-700 mb-6">
+                This module focuses on getting started with Python programming, specifically for the Raspberry Pi Pico microcontroller using MicroPython and its Arduino IDE.
+            </p>
+
+            <!-- Section for Key Learnings -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Key Learnings:</h4>
+                <ul class="list-disc list-inside text-gray-700 pl-4">
+                    <li><strong>Introduction to Python:</strong> Fundamental Python syntax, data types, control flow, and functions.</li>
+                    <li><strong>Installation of Thonny IDE and MicroPython:</strong> Steps to set up Thonny IDE and flash MicroPython firmware onto Raspberry Pi Pico.</li>
+                    <li><strong>Blink PICO LED using MicroPython:</strong> How to write and deploy a simple LED blinking program using MicroPython on Raspberry Pi Pico.</li>
+                    <li><strong>Blink LED using Arduino:</strong> How to achieve the same LED blinking functionality using the Arduino IDE, typically with an Arduino-compatible board.</li>
+                </ul>
+            </div>
+
+            <!-- Section for Projects/Exercises -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Projects/Exercises:</h4>
+                <p class="text-gray-700">
+                    <strong>Day 1:</strong> Introduction to Python.
+                    <br>
+                    <strong>Day 2:</strong> Installation of Thonny IDE and MicroPython, Micro-python for Raspberry Pi Pico.
+                    <br>
+                    <strong>Day 3:</strong> Blink PICO LED using MicroPython, Blink LED using Arduino.
+                    <br><br>
+                    During the lessons, TinkerCAD was used for circuit simulation and visualization before actual hardware implementation.
+                    <br><br>
+                    <strong>Code Snippet: Blink LED using MicroPython (for Raspberry Pi Pico)</strong>
+                    <pre class="bg-gray-100 p-4 rounded-md mt-2 text-sm overflow-auto"><code>
+import machine
+import time
+
+# Built-in LED on Raspberry Pi Pico is typically GPIO 25
+led_pin = machine.Pin(25, machine.Pin.OUT)
+
+while True:
+    led_pin.value(1)  # Turn LED on
+    time.sleep(1)     # Wait for 1 second
+    led_pin.value(0)  # Turn LED off
+    time.sleep(1)     # Wait for 1 second
+                    </code></pre>
+                    <br>
+                    <strong>Code Snippet: Blink LED using Arduino (C++)</strong>
+                    <pre class="bg-gray-100 p-4 rounded-md mt-2 text-sm overflow-auto"><code>
+// Arduino code for blinking an LED (e.g., on an Arduino Uno or ESP32/Pico configured for Arduino IDE)
+
+const int ledPin = LED_BUILTIN; // Most Arduino boards have a built-in LED connected to a specific pin
+
+void setup() {
+  // Initialize the LED_BUILTIN pin as an output.
+  pinMode(ledPin, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(ledPin, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                  // wait for a second
+  digitalWrite(ledPin, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                  // wait for a second
+}
+                    </code></pre>
+                    <br>
+                    <strong>Relevant Resources:</strong>
+                    <ul class="list-disc list-inside text-gray-700 pl-4 mt-2">
+                        <li><a href="https://www.learnpython.org/" target="_blank" class="text-blue-600 hover:underline">Learn Python</a></li>
+                        <li><a href="https://thonny.org/docs/docs.html" target="_blank" class="text-blue-600 hover:underline">Using Thonny Editor</a></li>
+                        <li><a href="https://micropython.org/download/rp2-pico/" target="_blank" class="text-blue-600 hover:underline">Micro-python for Raspberry Pi Pico</a></li>
+                        <li><a href="https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf" target="_blank" class="text-blue-600 hover:underline">Raspberry Pi Pico Python SDK</a></li>
+                        <li><a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink" target="_blank" class="text-blue-600 hover:underline">Arduino Blink Example</a></li>
+                        <li><a href="https://randomnerdtutorials.com/blink-led-raspberry-pi-pico-micropython/" target="_blank" class="text-blue-600 hover:underline">Blink LED MicroPython</a></li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Navigation buttons for modules -->
+            <div class="flex justify-between items-center mt-8 flex-wrap gap-4">
+                <!-- Previous Module Button -->
+                <a href="module3.html" class="px-6 py-2 bg-black text-white rounded-md font-semibold hover:bg-gray-800 transition duration-300">
+                    &lt; Previous Module
+                </a>
+
+                <!-- Back to Modules List Button (centered) -->
+                <a href="modules.html" class="px-6 py-2 bg-lift-yellow text-black rounded-md font-semibold hover:bg-yellow-400 transition duration-300">
+                    Back to Modules List
+                </a>
+
+                <!-- Next Module Button -->
+                <a href="module5.html" class="px-6 py-2 bg-black text-white rounded-md font-semibold hover:bg-gray-800 transition duration-300">
+                    Next Module &gt;
+                </a>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="bg-dark-grey text-white p-4 text-center text-sm">
+      
+    </footer>
+
+    
+</body>
+</html>
