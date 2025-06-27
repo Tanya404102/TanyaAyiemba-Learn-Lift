@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10: ESP32-CAM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header/Navbar - Modified -->
+    <header class="bg-dark-grey text-white p-4 shadow-custom">
+        <nav class="container mx-auto flex flex-col sm:flex-row items-center justify-center">
+            <!-- Navigation Links - Dropdown removed -->
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-lg font-medium">
+                <li><a href="index.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">About me</a></li>
+                <li><a href="modules.html" class="hover:text-lift-yellow rounded-md px-3 py-2 transition duration-300">Modules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content for Individual Module Page -->
+    <main class="flex-grow bg-light-grey p-8">
+        <!-- Changed max-w-4xl to max-w-full to allow content to expand -->
+        <div class="container mx-auto max-w-full bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-bold text-black mb-6 text-center">Week 10: ESP32-CAM</h2>
+            
+            <p class="text-lg text-gray-700 mb-6">
+                This module introduces the ESP32-CAM, a small module with an ESP32-S microcontroller and a camera, ideal for various IoT projects requiring image capture.
+            </p>
+
+            <!-- Section for Key Learnings -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Key Learnings:</h4>
+                <ul class="list-disc list-inside text-gray-700 pl-4">
+                    <li><strong>Introduction to ESP32-CAM:</strong> Understanding the hardware and capabilities of the ESP32-CAM module.</li>
+                    <li><strong>ESP32-CAM Web Server:</strong> Setting up a web server on ESP32-CAM to stream video or capture images remotely.</li>
+                </ul>
+            </div>
+
+            <!-- Section for Projects/Exercises -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Projects/Exercises:</h4>
+                <p class="text-gray-700">
+                    <strong>Day 1:</strong> Introduction to ESP32-CAM.
+                    <br>
+                    <strong>Day 2:</strong> ESP32-CAM Web server.
+                    <br><br>
+                    <div class="flex justify-center my-4">
+                        <img src="ESP-CAM.jpg" alt="ESP32-CAM Circuit" class="max-w-md h-auto rounded-lg shadow-md">
+                    </div>
+                    <strong>Relevant Resources:</strong>
+                    <ul class="list-disc list-inside text-gray-700 pl-4 mt-2">
+                        <li><a href="https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout-camera-web-server/" target="_blank" class="text-blue-600 hover:underline">ESP32-CAM Getting Started</a></li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Navigation buttons for modules -->
+            <div class="flex justify-between items-center mt-8 flex-wrap gap-4">
+                <!-- Previous Module Button -->
+                <a href="module9.html" class="px-6 py-2 bg-black text-white rounded-md font-semibold hover:bg-gray-800 transition duration-300">
+                    &lt; Previous Module
+                </a>
+
+                <!-- Back to Modules List Button (centered) -->
+                <a href="modules.html" class="px-6 py-2 bg-lift-yellow text-black rounded-md font-semibold hover:bg-yellow-400 transition duration-300">
+                    Back to Modules List
+                </a>
+
+                <!-- Next Module Button -->
+                <a href="module11.html" class="px-6 py-2 bg-black text-white rounded-md font-semibold hover:bg-gray-800 transition duration-300">
+                    Next Module &gt;
+                </a>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="bg-dark-grey text-white p-4 text-center text-sm">
+        
+    </footer>
+
+    
+</body>
+</html>
